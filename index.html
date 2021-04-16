@@ -10,8 +10,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <!-- Custom Styling Sheets below -->
-  <link rel="stylesheet" href="css/custom-style.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <script src="js/custom.js"></script>
 
 </head>
 
@@ -19,19 +21,36 @@
 <!-- Main Container Starts -->
 <div class="container main-cont">
 
-
-
-
  <!-- Navigation Bar starts -->
  <div class="top-nav">
+   <!-- Header starts -->
+   <div class="logo1"></div>
+   <h3 class="header-title1">Guardians of</h3>
+   <h1 class="header-title2">Pauatahanui Inlet</h1>
+   <!-- Header ENDS -->
+
+
+
    <a href="#home">HOME</a>
    <a href="#aboutUs">ABOUT US</a>
    <a href="#join">JOIN</a>
    <a href="#events"> EVENTS</a>
    <a href="#education">EDUCATION</a>
-   <a href="#research">RESEARCH</a>
- </div>
 
+   <div class="research">
+     <button class="researchbtn" onclick="myFunction()">RESEARCH
+       <i class="fa fa-caret-down" aria-hidden="true"></i>
+     </button>
+     <div class="research-dropdown" id="researchDropdown">
+       <a href="">History</a>
+       <a href="">Wildlife</a>
+       <a href="">Archealogical Dig</a>
+       <a href="">Annual Reports</a>
+     </div>
+     </div>
+ </div>
+<!-- Navigation Bar ENDS -->
+<!-- Home Slider starts -->
 
 
 

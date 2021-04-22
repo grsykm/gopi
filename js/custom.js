@@ -1,3 +1,5 @@
+// Dropdown function starts
+
 function myFunction() {
   document.getElementById('researchDropdown').classList.toggle('show');
 }
@@ -5,8 +7,10 @@ function myFunction() {
 window.onclick = function(e) {
   if (!e.target.matches('.researchbtn')) {
     var researchDropdown = document.getElementById('researchDropdown');
-     if (researchDropdown.classList.contains('show')) {
-       researchDropdown.classList.remove('show');
-     }
+    if (researchDropdown.classList.contains('show')) {
+      researchDropdown.classList.remove('show');
+    }
   }
 };
+// Drop function ENDS
+// Home Slider Starts

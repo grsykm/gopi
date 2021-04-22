@@ -9,39 +9,49 @@ body {
 
 
 
+/* Navigation Bar starts */
+/* Header starts */
 
+.header-title1 {
+  color: white;
+  letter-spacing: 3px;
+}
 
+.header-title2 {
+  color: white;
+  letter-spacing: 3px;
 
-
+}
 
 .top-nav {
  overflow: hidden;
- background-color: #2F3F3C;
- font-family: 'Ubuntu';
+ background-color: #2f3f3c;
+ font-family: 'Ubuntu', sans-serif;
 }
 
 .top-nav a {
   float:left;
-  font-size:24px;
+  font-size:20px;
   color: white;
   text-align: center;
-  padding: 15px 15px;
+  padding: 25px 45px;
   text-decoration: none;
 }
 
 .research {
   float: left;
   overflow: hidden;
+
 }
 
 .research .researchbtn {
   cursor: pointer;
-  font-size: 24px;
+  font-size: 20px;
   border: none;
   outline: none;
   color: white;
-  padding: 15px 15px;
-  background
+  padding: 25px 45px;
+  background-color: #2f3f3c;
 }
 
 .top-nav a:hover,
@@ -55,7 +65,6 @@ body {
  position: absolute;
  background-color: #8B746C;
  min-width: 160px;
- box-shadow: 0px 8px 16px 0px rgba(,0,0,0,0.2);
  z-index: 1;
 }
 
@@ -72,6 +81,17 @@ body {
   background-color: #CCB188;
 }
 
+.top-nav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
 .show {
   display: block;
 }
+/* Navigation Bar ENDS */
+/* Home Slider starts */

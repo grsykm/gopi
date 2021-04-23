@@ -1,17 +1,13 @@
-
 body {
-  font-family: 'Oxygen','Ubuntu', sans-serif;
+  font-family: 'Oxygen', 'Ubuntu', sans-serif;
 }
 
 .main-cont {
-
+  margin:0;
 }
-
-
 
 /* Navigation Bar starts */
 /* Header starts */
-
 .header-title1 {
   color: white;
   letter-spacing: 3px;
@@ -20,18 +16,17 @@ body {
 .header-title2 {
   color: white;
   letter-spacing: 3px;
-
 }
 
 .top-nav {
- overflow: hidden;
- background-color: #2f3f3c;
- font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+  background-color: #2f3f3c;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .top-nav a {
-  float:left;
-  font-size:20px;
+  float: left;
+  font-size: 20px;
   color: white;
   text-align: center;
   padding: 25px 45px;
@@ -41,7 +36,6 @@ body {
 .research {
   float: left;
   overflow: hidden;
-
 }
 
 .research .researchbtn {
@@ -61,11 +55,11 @@ body {
 }
 
 .research-dropdown {
- display: none;
- position: absolute;
- background-color: #8B746C;
- min-width: 160px;
- z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #8B746C;
+  min-width: 160px;
+  z-index: 1;
 }
 
 .research-dropdown a {
@@ -93,5 +87,76 @@ body {
 .show {
   display: block;
 }
+
 /* Navigation Bar ENDS */
 /* Home Slider starts */
+/* Styling the area of the slides */
+.slideshow {
+  text-align: center;
+  font-size: 40px;
+  overflow: hidden;
+  height: 510px;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+/* Style each of the sides
+with a fixed width and height */
+.slide {
+  float: left;
+  height: 510px;
+  width: 100vw;
+}
+
+/* Add animation to the slides */
+.slide-wrapper {
+  /* Calculate the total width on the
+basis of number of slides */
+  width: calc(100vw * 4);
+  /* Specify the animation with the
+duration and speed */
+  animation: slide 10s ease infinite;
+}
+
+/* Set the background color
+of each of the slides */
+.slide:nth-child(1) {
+  background: green;
+}
+
+.slide:nth-child(2) {
+  background: pink;
+}
+
+.slide:nth-child(3) {
+  background: red;
+}
+
+.slide:nth-child(4) {
+  background: yellow;
+}
+
+/* Define the animation
+for the slideshow */
+@keyframes slide {
+
+  /* Calculate the margin-left for
+each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+
+  40% {
+    margin-left: calc(-100vw * 1);
+  }
+
+  60% {
+    margin-left: calc(-100vw * 2);
+  }
+
+  80% {
+    margin-left: calc(-100vw * 3);
+  }
+}
+
+/* Home slider ENDS */
